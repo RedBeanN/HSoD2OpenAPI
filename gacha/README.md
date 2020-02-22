@@ -26,6 +26,8 @@
 | title | 装备名 | String |
 | isGod | 是否为神器 | Boolean |
 
+蛋池未开放、不存在或未指定时会返回`404`
+
 ### 例
 
 `GET https://api.redbean.tech/gacha/high`
@@ -65,5 +67,3 @@
   }
 ]
 ```
-
-蛋池未开放、不存在或未指定时会返回`404`
