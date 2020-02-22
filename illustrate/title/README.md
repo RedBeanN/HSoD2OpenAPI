@@ -16,6 +16,8 @@
 
 `Array[Object]` 对应的装备数组, 可能包含多个装备, 按 uid 排序
 
+装备不存在时返回空数组
+
 ### 例
 
 `GET https://api.redbean.tech/illustrate/title/犹大的誓约`
