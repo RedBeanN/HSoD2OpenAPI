@@ -1,10 +1,10 @@
-# API-gacha
+# gacha
 
-## 十连扭蛋 [https://api.redbean.tech/gacha/:pool](https://api.redbean.tech/gacha/high)
+## 十连扭蛋接口 [https://api.redbean.tech/gacha/:pool](https://api.redbean.tech/gacha/high)
 
 ### 参数
 
-#### `pool: String`
+#### `pool<String>`
 
 对应不同卡池
 
@@ -66,4 +66,4 @@
 ]
 ```
 
-蛋池未开放时会返回`404`
+蛋池未开放、不存在或未指定时会返回`404`
