@@ -1,6 +1,6 @@
 # API-gacha
 
-## [https://api.redbean.tech/gacha/:pool](https://api.redbean.tech/gacha/high)
+## 十连扭蛋 [https://api.redbean.tech/gacha/:pool](https://api.redbean.tech/gacha/high)
 
 ### 参数
 
@@ -26,21 +26,44 @@
 | title | 装备名 | String |
 | isGod | 是否为神器 | Boolean |
 
-例:
+### 例
+
+`GET https://api.redbean.tech/gacha/high`
 
 ``` JSON
 [
-  { "title":"特勤作战服[4★]",       "isGod":false },
-  { "title":"V制式试作型电锯[4★]",  "isGod":false },
-  { "title":"手枪砖家(高段)[4★]",   "isGod":false },
-  { "title":"克拉伦特[5★]",         "isGod":true  },
-  { "title":"暴风雨[5★]",           "isGod":true  },
-  { "title":"静籁永恒[5★]",         "isGod":true  },
-  { "title":"雷电芽衣",             "isGod":true  },
-  { "title":"V制式战斗服·骑士[4★]", "isGod":false },
-  { "title":"V制式战斗服·骑士[3★]", "isGod":false },
-  { "title":"V制式战斗服·强弩[4★]", "isGod":false }
+  {
+    "title":"特勤作战服[4★]",
+    "isGod":false
+  }, {
+    "title":"V制式试作型电锯[4★]",
+    "isGod":false
+  }, {
+    "title":"手枪砖家(高段)[4★]",
+    "isGod":false
+  }, {
+    "title":"克拉伦特[5★]",
+    "isGod":true
+  }, {
+    "title":"暴风雨[5★]",
+    "isGod":true
+  }, {
+    "title":"静籁永恒[5★]",
+    "isGod":true
+  }, {
+    "title":"雷电芽衣",
+    "isGod":true
+  }, {
+    "title":"V制式战斗服·骑士[4★]",
+    "isGod":false
+  }, {
+    "title":"V制式战斗服·骑士[3★]",
+    "isGod":false
+  }, {
+    "title":"V制式战斗服·强弩[4★]",
+    "isGod":false
+  }
 ]
 ```
 
-蛋池未开放时会返回404
+蛋池未开放时会返回`404`
