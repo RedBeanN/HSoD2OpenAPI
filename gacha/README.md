@@ -1,6 +1,6 @@
 # gacha
 
-## 十连扭蛋接口 [https://api.redbean.tech/gacha/:pool](https://api.redbean.tech/gacha/high)
+## 十连扭蛋接口 [https://api.redbean.tech/gacha/:pool[?count=10]](https://api.redbean.tech/gacha/high)
 
 ### 参数
 
@@ -15,9 +15,13 @@
 | special | 魔法少女 |
 | middle | 大小姐 |
 
+#### `count<Number>` (可选)
+
+扭蛋次数, 默认10, 最小1, 最大100
+
 ### 返回值
 
-`Array[Object]` 一个包含 10 个对象的数组.
+`Array[Object]` 一个包含 `count` 个对象的数组.
 
 对象的键值:
 
@@ -30,7 +34,7 @@
 
 ### 例
 
-`GET https://api.redbean.tech/gacha/high`
+`GET https://api.redbean.tech/gacha/high?count=10`
 
 ``` JSON
 [
